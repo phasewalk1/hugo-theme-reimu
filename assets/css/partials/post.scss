@@ -75,7 +75,7 @@
   margin: 4px 0;
 
   span {
-    font-size: 14px;
+    font-size: 15px;
     color: var(--grey-7);
     margin: 0 12px;
     white-space: nowrap;
@@ -120,7 +120,7 @@
   line-clamp: 3;
   overflow: hidden;
   line-height: 32px;
-  font-size: 15px;
+  font-size: 16px;
   color: var(--grey-7);
 
   a {
@@ -188,7 +188,6 @@
   padding: 20px 0;
   color: var(--color-link);
   font-size: 25px;
-  letter-spacing: 1px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -207,7 +206,7 @@
   background: var(--color-sticky);
   color: var(--red-1);
   font-weight: bold;
-  font-size: 15px;
+  font-size: 16px;
   z-index: 1;
   transition: 0.3s;
   border-top-left-radius: $post-radius;

@@ -1,0 +1,63 @@
+// ```chat code blocks, rendered by layouts/_default/_markup/render-codeblock-chat.html
+
+.article-entry .chat-log {
+  margin: 28px 0;
+  padding: 6px 0;
+  background: var(--red-5-5);
+  border-radius: $post-radius;
+  box-shadow: var(--shadow-meta);
+  transition: box-shadow 0.3s;
+
+  &:hover {
+    box-shadow: var(--shadow-meta-hover);
+  }
+}
+
+.article-entry .chat-turn {
+  display: grid;
+  grid-template-columns: 7.5em 1fr;
+  gap: 0 1em;
+  padding: 12px 20px;
+
+  & + & {
+    border-top: 1px dashed var(--color-h2-border);
+  }
+}
+
+.article-entry .chat-role {
+  padding-top: 0.2em;
+  text-align: right;
+  font-family: $code-families;
+  font-size: 0.8em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--grey-9);
+}
+
+.article-entry .chat-turn:not([data-role="user"]):not([data-role="human"]) .chat-role {
+  color: var(--color-link);
+}
+
+.article-entry .chat-body {
+  min-width: 0;
+
+  > :first-child {
+    margin-top: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .article-entry .chat-turn {
+    grid-template-columns: 1fr;
+    padding: 10px 14px;
+  }
+
+  .article-entry .chat-role {
+    text-align: left;
+    padding: 0 0 4px;
+  }
+}

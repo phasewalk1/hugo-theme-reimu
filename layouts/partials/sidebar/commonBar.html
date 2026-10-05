@@ -1,5 +1,9 @@
 {{- $params := .ctx.Site.Params -}}
 {{- $mobile := .mobile -}}
+{{- $avatar := $params.avatar -}}
+{{- if not (strings.Contains $avatar "/") -}}
+  {{- $avatar = printf "avatar/%s" $avatar -}}
+{{- end -}}
 {{- $showMenu := true -}}
 {{- /* Backward compatibility */ -}}
 {{- if and (reflect.IsMap $params.sidebar) (isset $params.sidebar "menu") -}}
@@ -7,7 +11,7 @@
 {{- end -}}
 <div class="sidebar-author">
   <img
-    data-src="{{ "avatar/" | relURL }}{{ $params.avatar }}"
+    data-src="{{ $avatar | relURL }}"
     data-sizes="auto"
     alt="{{ $params.author }}"
     class="lazyload"

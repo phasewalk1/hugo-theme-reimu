@@ -178,6 +178,7 @@ html, body, #container {
 
 body {
   width: 100%;
+  font-size: $font-size;
   background: var(--color-background);
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -308,6 +309,8 @@ a, .main-nav-icon, .popup-btn-close, button {
 @import "partials/post";
 @import "partials/pagination";
 @import "partials/article";
+@import "partials/link-icons";
+@import "partials/chat";
 @import "partials/highlight";
 @import "partials/sponsor";
 @import "partials/comment";
@@ -398,3 +401,5 @@ a, .main-nav-icon, .popup-btn-close, button {
   background: var(--red-1);
 }
 {{ end }}
+
+@import "partials/twitter-bird";

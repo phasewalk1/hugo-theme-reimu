@@ -45,7 +45,7 @@
 }
 
 .article-date-link {
-  font-size: 14px;
+  font-size: 15px;
   color: var(--red-1);
   background: var(--red-5);
   border-radius: $tag-radius;
@@ -73,7 +73,7 @@
   p,
   table {
     line-height: $line-height;
-    margin: 16px 0;
+    margin: 1em 0;
   }
 
   h1,
@@ -357,7 +357,7 @@
 
 .article-footer {
   @include clearfix;
-  font-size: 14px;
+  font-size: 15px;
   margin: 0 $article-padding + 16px $article-padding;
 
   @media #{$mg-normal} {
@@ -433,7 +433,7 @@
 
 .article-visitor-link {
   float: right;
-  font-size: 14px;
+  font-size: 15px;
   background: var(--red-5);
   border-radius: $tag-radius;
   margin-left: 12px;
